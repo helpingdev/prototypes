@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true" desensitize="false" duptxns="false">
+<exportFile></exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol">
+<idRegexUnparsed>[a-zA-Z]+[0-9]{5,}[a-zA-Z]*</idRegexUnparsed>
+<requestSideUnparsed>true</requestSideUnparsed>
+<maxChangesUnparsed>1</maxChangesUnparsed>
+<startPositionUnparsed>3</startPositionUnparsed>
+<urlParamPrefixUnparsed>URLPARAM</urlParamPrefixUnparsed>
+<rules>
+<rule>
+<operation>GET /user/getAdress/</operation>
+</rule>
+
+</rules>
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>$listenport</listenPort>
+		<targetHost>$targetHost</targetHost>
+		<targetPort>$targetPort</targetPort>
+<useGateway>true</useGateway>
+<hostHeaderPassThrough>false</hostHeaderPassThrough>
+<ssl toClient="false" sslClientAuthType="none" toServer="false"/>
+<basePath>/user/getAddress</basePath>
+</Protocol>
+</RecordingSession>

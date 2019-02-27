@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="2" name="newimage" created="2019-02-27.12:19:50.328" lastModified="2019-02-27.12:21:47.305" version="10.2.4" buildNumber="10.2.4.153">
+<st>
+<t id="1" nd="true">
+<sp>
+<t id="5">
+<rq id="6" op="GET /user/getAdress/" tl="EXACT">
+<ag>
+<p n="name" t="arg:EQUALS;true;;;;">Gasp</p>
+<p n="lastName" t="arg:EQUALS;true;;;;">Pascal</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">user</p>
+<p n="HTTP-Segment-Attr-1">getAdress</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/user/getAdress?name=Gasp&amp;lastName=Pascal</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/x-www-form-urlencoded; charset=UTF-8</p>
+<p n="Accept-Language">fr-FR</p>
+<p n="Accept-Encoding">gzip, deflate</p>
+<p n="User-Agent">Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko</p>
+<p n="matchedRule">GET /user/getAdress/</p>
+</m>
+</rq>
+<rs>
+<rp id="7" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#10;    &quot;name&quot;: &quot;{{=request_name;/*Gasp*/}}&quot;,&#10;    &quot;lastName&quot;:&quot;{{=request_lastName;/*Pascal*/}}&quot;,&#10;    &quot;street&quot;: &quot;rue Hoche&quot;,&#10;    &quot;city&quot;: &quot;Paris&quot;,&#10;    &quot;zipcode&quot;: &quot;750014&quot;,&#10;    &quot;country&quot;: &quot;France&quot;&#10;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="8" op="GET /user/getAdress/" tl="SIGNATURE">
+<ag>
+<p n="name" t="arg:EQUALS;true;;;;">Gasp</p>
+<p n="lastName" t="arg:EQUALS;true;;;;">Pascal</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">user</p>
+<p n="HTTP-Segment-Attr-1">getAdress</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/user/getAdress?name=Gasp&amp;lastName=Pascal</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/x-www-form-urlencoded; charset=UTF-8</p>
+<p n="Accept-Language">fr-FR</p>
+<p n="Accept-Encoding">gzip, deflate</p>
+<p n="User-Agent">Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko</p>
+<p n="matchedRule">GET /user/getAdress/</p>
+</m>
+</rq>
+<rs>
+<rp id="9" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#10;    &quot;name&quot;: &quot;{{=request_name;/*Gasp*/}}&quot;,&#10;    &quot;lastName&quot;:&quot;{{=request_lastName;/*Pascal*/}}&quot;,&#10;    &quot;street&quot;: &quot;rue Hoche&quot;,&#10;    &quot;city&quot;: &quot;Paris&quot;,&#10;    &quot;zipcode&quot;: &quot;750014&quot;,&#10;    &quot;country&quot;: &quot;France&quot;&#10;}</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="4" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="3" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>
