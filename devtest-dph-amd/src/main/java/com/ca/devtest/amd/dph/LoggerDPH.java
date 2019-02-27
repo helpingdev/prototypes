@@ -39,7 +39,7 @@ public class LoggerDPH extends DataProtocol {
 		
 		String guid= (String)testExec.getStateValue(GUID_KEY);
 		Transaction transaction =(Transaction)testExec.getStateObject(MATCHED_TRANSACTION_PROPERTY);
-		
+		Object  virtualService=testExec.getStateObject("LISA_VIRTUAL_SERVICE");
 		VSE.info(testExec, "Response uid: "+guid, transientResponse.getBodyAsString());
 		VSE.info(testExec, "Transaction uid: "+guid, transaction.toJSONString());
 		
