@@ -1,0 +1,2 @@
+vseProtocols=com.ca.devtest.amd.dph.LoggerDPH
+com.ca.devtest.amd.dph.LoggerDPH=Data:req:resp,Logger Transaction,Logger Transaction
